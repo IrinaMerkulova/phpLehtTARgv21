@@ -4,8 +4,7 @@
 <?php
 // eemalda urlist muutujad
 function clearVarsExcept($url, $varname) {
-    return strtok(basename($_SERVER['REQUEST_URI']),"?").
-        "?$varname=".$_REQUEST[$varname];
+    return strtok(basename($_SERVER['REQUEST_URI']),"?")."?$varname=".$_REQUEST[$varname];
 }
 
 $arv1=10;
@@ -18,7 +17,7 @@ echo "Kui esimene arv jagada teisega = ".($arv1/$arv2);
 ?>
 <h2> Kontrolli arvud:
 </h2>
-<form name="arvud" action="<?=clearVarsExcept(basename($_SERVER['REQUEST_URI']),"leht")?>" method='post'">
+<form name="arvud" action="<?=clearVarsExcept(basename($_SERVER['REQUEST_URI']),"leht")?>" method='post'>
     <label for="number1">Esimene arv</label>
     <input type="number" name="number1" id="number1">
 
