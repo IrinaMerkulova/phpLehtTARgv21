@@ -32,3 +32,8 @@ nav ul li {
 .ruut{
     list-style-type:square;
 }
+div.simple{
+    border: 1pt solid green;
+    padding: 5%;
+    width: 50%;
+}
